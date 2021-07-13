@@ -1,0 +1,14 @@
+nav {
+    width: 100vw;
+    padding: 8px;
+    background-color: indigo;
+    display: flex;
+    justify-content: space-around;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+nav > a:hover, nav > a.active {
+    text-decoration: underline;
+}
