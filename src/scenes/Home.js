@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AuthContext } from '../App'
 
 function Home(){
-    return <h1>Home</h1>
+    const { isLoggedIn, user } = useContext(AuthContext)
+    return <h1>Hello {isLoggedIn ? user.name : 'Guest'}</h1>
 }
 
 export default Home
